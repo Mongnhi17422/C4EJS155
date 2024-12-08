@@ -1,0 +1,832 @@
+:root {
+    --font-title: "Exo", serif;
+    --font-content: "Jost", serif;
+    --font-weight-title: 600;
+    --font-weight-content: 400;
+
+    --primary-color: #ff782d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* CSS_global */
+.margin-auto-left-right {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.horizontal {
+    display: flex;
+}
+
+.main-width-page {
+    width: 85%;
+}
+
+/* HOME PAGE */
+/* Home-Header */
+
+.navbar {
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navgivation {
+    width: 702px;
+    justify-content: space-between;
+}
+
+.navgivation li {
+    padding: 0 1.6rem;
+}
+
+.navbar li:hover,
+.action:hover {
+    background-color: #f5f5f5;
+}
+
+.navbar a:hover,
+.action:hover {
+    color: var(--primary-color);
+}
+
+.navgivation a,
+.action a {
+    color: #000;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    font-size: 1.6rem;
+    line-height: 7.1rem;
+}
+
+.navgivation > li {
+    position: relative;
+    top: 5px;
+}
+
+.sub-menu {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    display: none;
+    top: 70;
+    left: -10px;
+    transition-delay: 2s;
+}
+
+.sub-menu > li {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #f5f5f5;
+}
+
+.navgivation > li:hover .sub-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    font-size: 0.8rem;
+}
+
+.action {
+    width: 200px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.action .search-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+.action i {
+    color: var(--primary-color);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/*Home Container*/
+/* Banner */
+.banner {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to right, #fff5be, #d0f7ea);
+    position: relative;
+}
+
+.motifs-left,
+.motif-book,
+.banner-motifs-text,
+.banner-motifs-right,
+.motif-pen {
+    position: absolute;
+}
+
+.motifs-left {
+    width: 500px;
+    bottom: 0;
+    left: 0;
+}
+
+.motif-book {
+    bottom: 300px;
+    left: 100px;
+}
+
+.banner-motifs-text {
+    right: 250px;
+    top: 120px;
+}
+
+.banner-motifs-right {
+    right: 0;
+}
+
+.motif-pen {
+    top: 350px;
+    right: 0;
+}
+
+.content-banner {
+    width: 80%;
+    z-index: 1;
+    justify-content: space-around;
+}
+
+.content--banner-text {
+    width: 520px;
+    height: 262px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content--banner-text h2 {
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    font-size: 4.8rem;
+    padding-right: 50px;
+}
+
+.content--banner-text p {
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    line-height: 27px;
+}
+
+/* Top categories */
+.space-top {
+    margin-top: 100px;
+}
+
+.space-box-content {
+    justify-content: space-between;
+}
+
+.top-categories {
+    height: 640px;
+}
+
+.head-height {
+    height: 77px;
+}
+
+.general-font-title h3,
+.general-font-title h4 {
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+}
+
+.general-font-content p,
+.general-font-content p {
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+}
+
+.header-right h3 {
+    font-size: 3.2rem;
+    padding-bottom: 2rem;
+}
+.header-right p {
+    font-size: 1.8rem;
+}
+
+.head-btn > button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #9d9d9d;
+}
+
+.head-btn > button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.list-box-content {
+    margin-top: 30px;
+    height: 515px;
+    flex-wrap: wrap;
+}
+
+.box-categories {
+    width: 234px;
+    height: 234px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.box-categories img {
+    width: 32px;
+    height: 32px;
+    margin-top: 25%;
+}
+
+.box-categories h4 {
+    font-size: 2rem;
+    padding: 15px 0 5px 0;
+}
+
+.box-categories p {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+.box-categories:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 4px #e1e0e0;
+}
+
+/* Featured Courses */
+.featured-courses {
+    height: 1105px;
+}
+
+.head-featured-courses {
+    width: 100%;
+    height: 77px;
+}
+
+.main-featured-courses {
+    width: 100%;
+    height: 995px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.the-courses {
+    width: 410px;
+    height: 474px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+}
+
+.the-courses:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 30px 5px #e1e0e0;
+}
+
+.the-courses:hover .name-courses > h4 {
+    color: var(--primary-color);
+}
+
+.infor-courses {
+    margin: 15px;
+}
+
+.name-courses {
+    width: 370px;
+    height: 84px;
+    line-height: 24px;
+}
+
+.name-courses p {
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    font-size: 1.6rem;
+}
+
+.name-courses span {
+    color: #555;
+}
+
+.name-courses h4 {
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    margin-top: 10px;
+}
+
+.quatity,
+.time {
+    margin: 20px 30px 20px 0px;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.quatity img,
+.time img {
+    margin-right: 5px;
+}
+
+.price-and-view-more {
+    height: 60px;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    line-height: 27px;
+}
+
+.price > p:first-child {
+    text-decoration: line-through;
+    color: #9d9d9d;
+    font-weight: var(--font-weight-content);
+    margin-right: 10px;
+}
+
+.price > p:last-child {
+    color: #55be24;
+    font-weight: 500;
+}
+
+.view-more > a {
+    font-weight: 500;
+    color: #000;
+}
+
+.view-more > a:hover {
+    color: var(--primary-color);
+}
+
+/* LearnDress Add-Ons */
+.learndress-add-ons {
+    height: 324px;
+    background-image: url(../img/Mask\ group.png);
+}
+
+.learndress-add-ons > .content {
+    width: 450px;
+    height: 215px;
+    margin: 54.5px 0px 54.5px 54.5px;
+}
+
+.learndress-add-ons .title {
+    height: 70px;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+}
+
+.learndress-add-ons .title h4 {
+    color: #555;
+    font-size: 1.6rem;
+}
+
+.learndress-add-ons .title h2 {
+    height: 38px;
+    font-size: 3.2rem;
+    margin-top: 20px;
+}
+
+.learndress-add-ons .content p,
+button {
+    font-family: var(--font-content);
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+.learndress-add-ons .content p {
+    font-weight: var(--font-weight-content);
+    color: #555;
+}
+
+button {
+    width: 177px;
+    height: 48px;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+/* Quantity */
+.quantity {
+    height: 181px;
+}
+
+.quantity-item {
+    width: 22%;
+    height: 181px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.quantity strong {
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    font-size: 3.2rem;
+    color: var(--primary-color);
+}
+
+.quantity .decs {
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: 500;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+/* GUYS-with-learndress-lms */
+.GUYS-with-learndress-lms {
+    height: 469px;
+}
+
+.content-of-GUYS {
+    width: 520px;
+    height: 384px;
+    margin: 42.5px 0px;
+}
+
+.content-of-GUYS h2 {
+    font-size: 3.2rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    line-height: 3.8rem;
+}
+
+.content-of-GUYS .text {
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    line-height: 27px;
+}
+
+.content-of-GUYS .text p {
+    color: #555;
+    margin: 20px 0px;
+}
+
+.content-of-GUYS .text li {
+    margin: 10px 0px;
+}
+
+.content-of-GUYS .text li > i {
+    width: 16px;
+    height: 16px;
+    color: #55be24;
+    margin-right: 5px;
+}
+
+/* education wordpress theme */
+.education-wordpress-theme {
+    height: 300px;
+    background-image: url(../img/educatio-\ wordpress-theme.png);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-wordpress-theme .title {
+    width: 430px;
+    height: 70px;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-wordpress-theme .title h3 {
+    font-size: 1.6rem;
+}
+
+.education-wordpress-theme .title h2 {
+    font-size: 3.2rem;
+}
+
+.education-wordpress-theme p {
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    line-height: 27px;
+    color: #555;
+}
+
+.student-feedbacks {
+    height: 535px;
+}
+
+.head-student-feedbacks {
+    text-align: center;
+}
+
+.head-student-feedbacks h2 {
+    font-size: 3.2rem;
+    font-weight: var(--font-weight-title);
+    font-family: var(--font-title);
+    line-height: 3.8rem;
+}
+
+.head-student-feedbacks p {
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    line-height: 2.7rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.content-feedbacks {
+    height: 400px;
+    margin-top: 40px;
+}
+
+.feedback-box {
+    width: 300px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    padding: 40px 30px;
+    line-height: 2.7rem;
+}
+
+.feedback-box .content {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.feedback-box .author {
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    padding-bottom: 10px;
+}
+
+.feedback-box .position {
+    color: #555;
+}
+
+/* start-with-LMS */
+.start-with-LMS {
+    height: 250px;
+    background-image: linear-gradient(to right, #c7e6f9, #e7d2fe);
+    position: relative;
+    border-radius: 20px;
+}
+
+.start-with-LMS > img {
+    width: 100%;
+}
+
+.conten-start {
+    width: 90%;
+    height: 120px;
+    margin: 0px 50px;
+    position: absolute;
+    top: calc((250px - 120px) / 2);
+    justify-content: space-between;
+}
+
+.slogan {
+    width: 433px;
+    align-items: center;
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    line-height: 2.4rema;
+}
+
+.btn-start > button {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: 500;
+    line-height: 2.7rem;
+    border-radius: 999px;
+    border: 2px solid var(--primary-color);
+    padding: 10px 24px;
+    background-color: #fff;
+}
+
+.btn-start > button:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+button.btn-instructor {
+    width: 230px;
+    margin-left: 20px;
+}
+
+/* Latest articles */
+
+.latest-articles {
+    height: 575px;
+}
+
+.the-articles {
+    height: 465px;
+    margin-top: 30px;
+}
+
+.a-article {
+    width: 410px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+}
+
+.a-article:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 30px 5px #e1e0e0;
+}  
+
+.name-article:hover > h2 {
+    color: var(--primary-color);
+}
+
+.name-article {
+    height: 190px;
+    padding: 20px;
+    line-height: 2.7rem;
+}
+
+.name-article h2 {
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+}
+
+.time-post,
+.name-article > p {
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    color: #555;
+}
+
+.time-post {
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.time-post > i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.name-article > p {
+    font-size: 1.8rem;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 550px;
+    color: #555;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.row-items {
+    height: 480px;
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    padding-top: 100px;
+}
+
+.logo-and-desc {
+    width: 380px;
+}
+
+.social-icon > i {
+    width: 20px;
+    height: 20px;
+}
+
+.logo-and-desc > p {
+    padding-top: 30px;
+    line-height: 2.7rem;
+}
+
+
+.row-items h3 {
+    color: #000;
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    padding-bottom: 30px;
+}
+
+.get-help,
+.programs {
+    width: 190px;
+}
+
+.row-items a {
+    color: #555;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+
+.row-items li:hover a {
+    color: var(--primary-color);
+}
+
+.contact {
+    width: 410px;
+    height: 160px;
+}
+
+
+.tel-and-mail a {
+    font-weight: 400;
+}
+
+.social-icon {
+    padding-top: 10px;
+}
+
+.tel-and-mail a:hover,
+.social-icon i:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb {
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.breadcrumb-text {
+    font-size: 1.6rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    line-height: 60px;
+}
+
+.breadcrumb a {
+    color: #555;
+}
+
+.breadcrumb i {
+    font-size: 1.2rem;
+}
+
+.breadcrumb i,
+.breadcrumb a:last-child {
+    color: #9d9d9d;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-color);
+}
+

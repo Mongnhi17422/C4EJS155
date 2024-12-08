@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EduPress</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="img/x-icon" href="./asset/img/favicon.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./asset/css/reset.css" />
+        <link rel="stylesheet" href="./asset/css/style.css" />
+        <style>
+            .navgivation li:first-child {
+                background-color: #f5f5f5;
+            }
+            .navgivation > li:first-child a {
+                color: #ff782d;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <!-- Header -->
+            <header class="header">
+                <nav
+                    class="margin-auto-left-right horizontal navbar main-width-page"
+                >
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="./asset/img/LOGO.png" alt="EduPress-logo" />
+                    </div>
+                    <!-- navgivation -->
+                    <div>
+                        <ul
+                            class="margin-auto-left-right horizontal navgivation"
+                        >
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./course.html">Courses</a></li>
+                            <li><a href="#!">Blog</a></li>
+                            <li style="padding-bottom: 10px">
+                                <a href="#!">Page</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="#!">Contact</a></li>
+                                    <li><a href="#!">FAQs</a></li>
+                                    <li><a href="#!">Error</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">LearnPress Add-On</a></li>
+                            <li><a href="#!">Premium Theme</a></li>
+                        </ul>
+                    </div>
+                    <!-- Action -->
+                    <div class="action">
+                        <a href="./login-register.html">Login / Register</a>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- Container -->
+            <div class="container">
+                <!-- Banner -->
+                <div class="banner horizontal">
+                    <div class="motifs-banner">
+                        <div class="motifs-left">
+                            <div class="motif-book">
+                                <img
+                                    src="./asset/img/bg-banner-book.png"
+                                    alt=""
+                                />
+                            </div>
+                            <img
+                                src="./asset/img/bg-banner-left-bottom.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="banner-motifs-text">
+                            <img
+                                src="./asset/img/bg-banner-text.png"
+                                alt=""
+                                width="800px"
+                                height="400px"
+                            />
+                        </div>
+                        <div class="banner-motifs-right horizontal">
+                            <img
+                                style="opacity: 0.5"
+                                src="./asset/img/bg-banner-right-top.png"
+                                alt=""
+                            />
+                            <div class="motif-pen">
+                                <img
+                                    src="./asset/img/bg-banner-pen.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="content-banner horizontal margin-auto-left-right"
+                    >
+                        <div class="content--banner-text">
+                            <h2>Build Skills with Online Course</h2>
+                            <p>
+                                We denounce with righteous indignation and
+                                dislike men who are so beguiled and demoralized
+                                that cannot trouble.
+                            </p>
+                            <button>Posts comment</button>
+                        </div>
+                        <div class="image-girl">
+                            <img
+                                src="./asset/img/beautiful-student-girl-wearing-backpack-holding-notebook-isolated-white-background 1.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- Top categories -->
+                <div
+                    class="top-categories margin-auto-left-right main-width-page space-top"
+                >
+                    <div
+                        class="head-top-categories horizontal space-box-content head-height"
+                    >
+                        <div
+                            class="header-right general-font-title general-font-content"
+                        >
+                            <h3>Top Categories</h3>
+                            <p>Explore our Popular Categories</p>
+                        </div>
+                        <div class="head-btn">
+                            <button>All Categories</button>
+                        </div>
+                    </div>
+                    <div
+                        class="list-box-content list-top-categories horizontal space-box-content"
+                    >
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/art&design - Copy.png"
+                                alt=""
+                            />
+                            <h4>Art & Design</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/development.png"
+                                alt=""
+                            />
+                            <h4>Development</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/Communiication.png"
+                                alt=""
+                            />
+                            <h4>Communiication</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/Videography.png"
+                                alt=""
+                            />
+                            <h4>Videography</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/Photography.png"
+                                alt=""
+                            />
+                            <h4>Photography</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/Marketing.png"
+                                alt=""
+                            />
+                            <h4>Marketing</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/Content writing.png"
+                                alt=""
+                            />
+                            <h4>Content writing</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/Finance.png"
+                                alt=""
+                            />
+                            <h4>Finance</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <img
+                                src="./asset/img/image-top-categories-home/Science.png"
+                                alt=""
+                            />
+                            <h4>Science</h4>
+                            <p>38 Courses</p>
+                        </div>
+                        <div
+                            class="box-categories general-style-categories-courses-articles general-font-title general-font-content"
+                        >
+                            <i
+                                style="
+                                    color: #ff782d;
+                                    width: 32px;
+                                    height: 32px;
+                                    font-size: 32px;
+                                    margin-top: 25%;
+                                "
+                                class="fa-solid fa-network-wired"
+                            ></i>
+                            <h4>Network</h4>
+                            <p>38 Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured Courses -->
+                <div
+                    class="featured-courses main-width-page margin-auto-left-right space-top"
+                >
+                    <div
+                        class="head-featured-courses horizontal space-box-content"
+                    >
+                        <div
+                            class="header-right general-font-title general-font-content"
+                        >
+                            <h3>Featured Courses</h3>
+                            <p>Explore our Popular Courses</p>
+                        </div>
+                        <div class="head-btn">
+                            <button>All Courses</button>
+                        </div>
+                    </div>
+                    <div
+                        class="main-featured-courses horizontal space-box-content"
+                    >
+                        <div class="the-courses">
+                            <img
+                                src="./asset/img/image-featured-courses-home/LMS.png"
+                                alt=""
+                            />
+                            <div class="infor-courses">
+                                <div class="name-courses">
+                                    <p><span>by</span> Determined-Poitras</p>
+                                    <h4>
+                                        Create an LMS Website with <br />
+                                        LearnPress
+                                    </h4>
+                                </div>
+                                <div class="time-and-quatity horizontal">
+                                    <div class="time horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/clock-icon.png"
+                                            alt=""
+                                        />
+                                        <p>2Weeks</p>
+                                    </div>
+                                    <div class="quatity horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/education-icon.png"
+                                            alt=""
+                                        />
+                                        <p>156 Students</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="price-and-view-more horizontal space-box-content"
+                                >
+                                    <div class="price horizontal">
+                                        <p>$29.0</p>
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="view-more">
+                                        <a href="#!">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="the-courses">
+                            <img
+                                src="./asset/img/image-featured-courses-home/thimPress.png"
+                                alt=""
+                            />
+                            <div class="infor-courses">
+                                <div class="name-courses">
+                                    <p><span>by</span> Determined-Poitras</p>
+                                    <h4>Design a website with ThimPress</h4>
+                                </div>
+                                <div class="time-and-quatity horizontal">
+                                    <div class="time horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/clock-icon.png"
+                                            alt=""
+                                        />
+                                        <p>2Weeks</p>
+                                    </div>
+                                    <div class="quatity horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/education-icon.png"
+                                            alt=""
+                                        />
+                                        <p>156 Students</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="price-and-view-more horizontal space-box-content"
+                                >
+                                    <div class="price horizontal">
+                                        <p>$59.0</p>
+                                        <p
+                                            style="
+                                                color: #f51a1a;
+                                                font-weight: 500;
+                                            "
+                                        >
+                                            $49.0
+                                        </p>
+                                    </div>
+                                    <div class="view-more">
+                                        <a href="#!">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="the-courses">
+                            <img
+                                src="./asset/img/image-featured-courses-home/box3.png"
+                                alt=""
+                            />
+                            <div class="infor-courses">
+                                <div class="name-courses">
+                                    <p><span>by</span> Determined-Poitras</p>
+                                    <h4>
+                                        Create an LMS Website with <br />
+                                        LearnPress
+                                    </h4>
+                                </div>
+                                <div class="time-and-quatity horizontal">
+                                    <div class="time horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/clock-icon.png"
+                                            alt=""
+                                        />
+                                        <p>2Weeks</p>
+                                    </div>
+                                    <div class="quatity horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/education-icon.png"
+                                            alt=""
+                                        />
+                                        <p>156 Students</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="price-and-view-more horizontal space-box-content"
+                                >
+                                    <div class="price horizontal">
+                                        <p>$29.0</p>
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="view-more">
+                                        <a href="#!">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="the-courses">
+                            <img
+                                src="./asset/img/image-featured-courses-home/box4.png"
+                                alt=""
+                            />
+                            <div class="infor-courses">
+                                <div class="name-courses">
+                                    <p><span>by</span> Determined-Poitras</p>
+                                    <h4>
+                                        Create an LMS Website with <br />
+                                        LearnPress
+                                    </h4>
+                                </div>
+                                <div class="time-and-quatity horizontal">
+                                    <div class="time horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/clock-icon.png"
+                                            alt=""
+                                        />
+                                        <p>2Weeks</p>
+                                    </div>
+                                    <div class="quatity horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/education-icon.png"
+                                            alt=""
+                                        />
+                                        <p>156 Students</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="price-and-view-more horizontal space-box-content"
+                                >
+                                    <div class="price horizontal">
+                                        <p>$29.0</p>
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="view-more">
+                                        <a href="#!">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="the-courses">
+                            <img
+                                src="./asset/img/image-featured-courses-home/box5.png"
+                                alt=""
+                            />
+                            <div class="infor-courses">
+                                <div class="name-courses">
+                                    <p><span>by</span> Determined-Poitras</p>
+                                    <h4>
+                                        Create an LMS Website with <br />
+                                        LearnPress
+                                    </h4>
+                                </div>
+                                <div class="time-and-quatity horizontal">
+                                    <div class="time horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/clock-icon.png"
+                                            alt=""
+                                        />
+                                        <p>2Weeks</p>
+                                    </div>
+                                    <div class="quatity horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/education-icon.png"
+                                            alt=""
+                                        />
+                                        <p>156 Students</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="price-and-view-more horizontal space-box-content"
+                                >
+                                    <div class="price horizontal">
+                                        <p>$29.0</p>
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="view-more">
+                                        <a href="#!">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="the-courses">
+                            <img
+                                src="./asset/img/image-featured-courses-home/LMS.png"
+                                alt=""
+                            />
+                            <div class="infor-courses">
+                                <div class="name-courses">
+                                    <p><span>by</span> Determined-Poitras</p>
+                                    <h4>
+                                        Create an LMS Website with <br />
+                                        LearnPress
+                                    </h4>
+                                </div>
+                                <div class="time-and-quatity horizontal">
+                                    <div class="time horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/clock-icon.png"
+                                            alt=""
+                                        />
+                                        <p>2Weeks</p>
+                                    </div>
+                                    <div class="quatity horizontal">
+                                        <img
+                                            src="./asset/img/image-featured-courses-home/education-icon.png"
+                                            alt=""
+                                        />
+                                        <p>156 Students</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="price-and-view-more horizontal space-box-content"
+                                >
+                                    <div class="price horizontal">
+                                        <p>$29.0</p>
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="view-more">
+                                        <a href="#!">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LearnPress Add-ons -->
+                <div
+                    class="learndress-add-ons main-width-page horizontal space-top margin-auto-left-right"
+                >
+                    <div class="content">
+                        <div class="title">
+                            <h4>GET MORE POWER FROM</h4>
+                            <h2>LearnPress Add-Ons</h2>
+                        </div>
+                        <p>
+                            The next level of LearnPress - LMS WordPress Plugin.
+                            More Powerful, Flexible and Magical Inside.
+                        </p>
+                        <button>Explorer course</button>
+                    </div>
+                </div>
+                <!-- Quantity -->
+                <div
+                    class="quantity horizontal space-top main-width-page margin-auto-left-right space-box-content"
+                >
+                    <div class="quantity-item">
+                        <strong>25K+</strong>
+                        <p class="decs">Active Students</p>
+                    </div>
+                    <div class="quantity-item">
+                        <strong>899</strong>
+                        <p class="decs">Total Courses</p>
+                    </div>
+                    <div class="quantity-item">
+                        <strong>158 </strong>
+                        <p class="decs">Instructor</p>
+                    </div>
+                    <div class="quantity-item">
+                        <strong>100%</strong>
+                        <p class="decs">Satisfaction rate</p>
+                    </div>
+                </div>
+                <!-- GUYS-with-learndress-lms  -->
+                <div
+                    class="GUYS-with-learndress-lms horizontal space-box-content space-top main-width-page margin-auto-left-right"
+                >
+                    <div class="image">
+                        <img src="./asset/img/Vector.png" alt="" />
+                    </div>
+                    <div class="content-of-GUYS">
+                        <h2>Grow Us Your Skill <br />With LearnPress LMS</h2>
+                        <div class="text">
+                            <p>
+                                We denounce with righteous indignation and
+                                dislike men who are so beguiled and demoralized
+                                that cannot trouble.
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i
+                                    >Certification
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i
+                                    >Certification
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i
+                                    >Certification
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i
+                                    >Certification
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-GUYS">
+                            <button>Explorer course</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education wordpress-theme -->
+                <div
+                    class="education-wordpress-theme space-top horizontal main-width-page margin-auto-left-right"
+                >
+                    <div class="title">
+                        <h3>PROVIDING AMAZING</h3>
+                        <h2>Education Wordpress Theme</h2>
+                    </div>
+                    <p>
+                        The next level of LMS WordPress Theme. Learn anytime and
+                        anywhere.
+                    </p>
+                    <button>Explorer course</button>
+                </div>
+                <!-- Student Feedbacks -->
+                <div
+                    class="student-feedbacks main-width-page margin-auto-left-right space-top"
+                >
+                    <div class="head-student-feedbacks">
+                        <h2>Student Feedbacks</h2>
+                        <p>What Students Say About Academy LMS</p>
+                    </div>
+                    <div class="content-feedbacks horizontal space-box-content">
+                        <div class="feedback-box">
+                            <img src="./asset/img/“.png" alt="" />
+                            <p class="content">
+                                I must explain to you how all this mistaken .
+                                Tdea of denouncing pleasure and praising pain
+                                was born and I will give you a complete account
+                                of the system and expound
+                            </p>
+                            <p class="author">Roe Smith</p>
+                            <p class="position">Designer</p>
+                        </div>
+                        <div class="feedback-box">
+                            <img src="./asset/img/“.png" alt="" />
+                            <p class="content">
+                                I must explain to you how all this mistaken .
+                                Tdea of denouncing pleasure and praising pain
+                                was born and I will give you a complete account
+                                of the system and expound
+                            </p>
+                            <p class="author">Roe Smith</p>
+                            <p class="position">Designer</p>
+                        </div>
+                        <div class="feedback-box">
+                            <img src="./asset/img/“.png" alt="" />
+                            <p class="content">
+                                I must explain to you how all this mistaken .
+                                Tdea of denouncing pleasure and praising pain
+                                was born and I will give you a complete account
+                                of the system and expound
+                            </p>
+                            <p class="author">Roe Smith</p>
+                            <p class="position">Designer</p>
+                        </div>
+                        <div class="feedback-box">
+                            <img src="./asset/img/“.png" alt="" />
+                            <p class="content">
+                                I must explain to you how all this mistaken .
+                                Tdea of denouncing pleasure and praising pain
+                                was born and I will give you a complete account
+                                of the system and expound
+                            </p>
+                            <p class="author">Roe Smith</p>
+                            <p class="position">Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Let’s Start With Academy LMS-->
+                <div
+                    class="start-with-LMS main-width-page margin-auto-left-right space-top"
+                >
+                    <img src="./asset/img/motif-banner.png" alt="" />
+                    <div class="conten-start horizontal">
+                        <div class="slogan horizontal space-box-content">
+                            <img src="./asset/img/001-student 1.png" alt="" />
+                            <h2>Let’s Start With Academy LMS</h2>
+                        </div>
+                        <div class="btn-start horizontal">
+                            <button class="btn-student">I’m A Student</button>
+                            <button class="btn-instructor">
+                                Become An Instructor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="latest-articles main-width-page margin-auto-left-right space-top"
+                >
+                    <div
+                        class="head-top-categories horizontal space-box-content head-height"
+                    >
+                        <div
+                            class="header-right general-font-title general-font-content"
+                        >
+                            <h3>Latest articles</h3>
+                            <p>Explore our Free Acticles</p>
+                        </div>
+                        <div class="head-btn">
+                            <button>All articles</button>
+                        </div>
+                    </div>
+                    <div class="the-articles horizontal space-box-content">
+                        <div class="a-article">
+                            <img src="./asset/img/article-1.png" alt="" />
+                            <div class="name-article">
+                                <h2>
+                                    Best LearnPress WordPress Theme Collection
+                                    for 2023
+                                </h2>
+                                <div class="time-post horizontal">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <time datetime="2023-01-24"
+                                        >Jan 24, 2023</time
+                                    >
+                                </div>
+                                <p>
+                                    Looking for an amazing & well-functional
+                                    LearnPress WordPress Theme?...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="a-article">
+                            <img src="./asset/img/article-1.png" alt="" />
+                            <div class="name-article">
+                                <h2>
+                                    Best LearnPress WordPress Theme Collection
+                                    for 2023
+                                </h2>
+                                <div class="time-post horizontal">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <time datetime="2023-01-24"
+                                        >Jan 24, 2023</time
+                                    >
+                                </div>
+                                <p>
+                                    Looking for an amazing & well-functional
+                                    LearnPress WordPress Theme?...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="a-article">
+                            <img src="./asset/img/article-1.png" alt="" />
+                            <div class="name-article">
+                                <h2>
+                                    Best LearnPress WordPress Theme Collection
+                                    for 2023
+                                </h2>
+                                <div class="time-post horizontal">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <time datetime="2023-01-24"
+                                        >Jan 24, 2023</time
+                                    >
+                                </div>
+                                <p>
+                                    Looking for an amazing & well-functional
+                                    LearnPress WordPress Theme?...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="footer space-top">
+                <div
+                    class="row-items horizontal space-box-content main-width-page margin-auto-left-right"
+                >
+                    <div class="logo-and-desc">
+                        <img src="./asset/img/LOGO.png" alt="" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="get-help">
+                        <h3>GET HELP</h3>
+                        <ul class="list-item">
+                            <li><a href="#!">Contact Us</a></li>
+                            <li><a href="#!">Latest Articles</a></li>
+                            <li><a href="#!">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="programs">
+                        <h3>PROGRAMS</h3>
+                        <ul class="list-item">
+                            <li><a href="#!">Art & Design</a></li>
+                            <li><a href="#!">Business</a></li>
+                            <li><a href="#!">IT & Software</a></li>
+                            <li><a href="#!">Languages</a></li>
+                            <li><a href="#!">Programming</a></li>
+                        </ul class="list-item">
+                    </div>
+                    <div class="contact">
+                        <h3>CONTACT US</h3>
+                        <address class="address"><p>Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA</p></address>
+                        <address class="tel-and-mail">
+                            <a href="tel:+ (123) 2500-567-8988">Tel: + (123) 2500-567-8988</a><br>
+                            <a href="mailto: supportlms@gmail.com">Mail: supportlms@gmail.com</a>
+                        </address>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

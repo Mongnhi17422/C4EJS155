@@ -1,0 +1,150 @@
+:root {
+    --font-title: "Exo", serif;
+    --font-content: "Jost", serif;
+    --font-weight-title: 600;
+    --font-weight-content: 400;
+
+    --primary-color: #ff782d;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.mr-top {
+    margin-top: 20px;
+}
+
+
+/* Heading all course */
+.all-course {
+    width: 70%;
+    height: 1620px;
+}
+
+.heading-all-coures {
+    width: 100%;
+    height: 45px;
+}
+
+.heading-all-coures h2 {
+    font-size: 3.6rem;
+    font-weight: var(--font-weight-title);
+    font-family: var(--font-title);
+}
+
+.all-course .heading-right {
+    width: 350px;
+    align-items: center;
+}
+
+.all-course .heading-right .search {
+    width: 270px;
+    position: relative;
+}
+
+.all-course .heading-right .search input {
+    width: 270px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.all-course .heading-right .search input::placeholder {
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+}
+
+.all-course i {
+    font-size: 1.8rem;
+}
+.all-course i:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.all-course .heading-right .search i {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.all-course .the-courses {
+    margin-bottom: 30px;
+}
+
+
+.pagination {
+    width: 100%;
+    height: 48px;
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: 500;
+    line-height: 2.7rem;
+    position: relative;
+    bottom: -420px;
+    left: 310px;
+}
+
+.pagination .pag-item {
+    width: 288px;
+}
+
+.pagination .pag-item i,
+.pagination .pag-item i {
+    font-size: 1.2rem;
+}
+
+
+.pagination .pag-item li {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.pagination .pag-item li:nth-child(2) {
+    background-color: #000;
+    color: #fff;
+}
+
+.pagination .pag-item li:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.list-item {
+    width: 25%;
+    margin-left: 5%;
+    line-height: 2.7rem;
+}
+
+.list-item .item > li {
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    margin-bottom: 30px;
+} 
+
+.child-item {
+    margin-top: 10px;
+}
+
+.child-item div {
+    display: inline;
+}
+
+
+.list-item .child-item > li {
+    font-size: 1.8rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    color: #555555;
+}

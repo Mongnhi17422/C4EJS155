@@ -1,0 +1,100 @@
+:root {
+    --font-title: "Exo", serif;
+    --font-content: "Jost", serif;
+    --font-weight-title: 600;
+    --font-weight-content: 400;
+
+    --primary-color: #ff782d;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.vid-lesson {
+    width: 900px;
+    padding: 0px 100px 10px;
+    background: #000;
+    margin-bottom: 30px;
+}
+
+.title-vid {
+    font-size: 2.4rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+}
+
+.title-vid p{
+    font-size: 1.4rem;
+    font-family: var(--font-content);
+    font-weight: var(--font-weight-content);
+    color: #555;
+    margin-top: 20px;
+}
+
+.save-lesson {
+    color: var(--primary-color);
+    padding-left: 10px;
+}
+
+.note-lesson {
+    height: 42px;
+    background: var(--primary-color);
+    padding: 12px 20px;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.note-lesson > i {
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.right-list-lesson {
+    width: calc(100% - 900px);
+}
+
+.the-lesson {
+    padding: 0px;
+}
+
+.title-lesson h3{
+    font-size: 1.6rem;
+}
+
+.lesson-items p,
+.lesson-items i  {
+    font-size: 1.4rem;
+}
+
+.next-and-back {
+    width: 900px;
+    position: relative;
+    bottom: 370px;
+    left: 100px;
+    justify-content: center;
+    margin-left: 5%;
+    z-index: 1;
+}
+
+.next-and-back button {
+    margin: 0px 20px;
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    width: 150px;
+}
+
+.next-and-back button:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
