@@ -84,7 +84,6 @@ function handleRegister() {
 // register (localStorage)
         const users = JSON.parse(localStorage.getItem("users")) || [];
         const userExists = users.some((user) => user.email === email.value.trim());
-        const loginForm = document.getElementById('loginForm')
 
         if (userExists) {
             alert("User already exists with this email!");
@@ -110,6 +109,7 @@ function handleLogin() {
     const password = document.getElementById("login-password");
 
     let isValid = true;
+
     // Validate email
     if (!email.value.trim()) {
         showError(email, "Email is required.");
@@ -137,7 +137,10 @@ function handleLogin() {
                 user.email === email.value.trim() &&
                 user.password === password.value.trim()
         );
-        if (user) {
+
+        if (user) { 
+            localStorage.setItem("isLoggedIn", "true");
+            localStorage.setItem("loggedInUser", JSON.stringify(user));
             alert(`Login successful! Welcome, ${user.username}`);
             window.location.href = "index.html";
         } else {
@@ -145,6 +148,19 @@ function handleLogin() {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

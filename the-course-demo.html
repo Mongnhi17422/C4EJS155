@@ -139,14 +139,7 @@
                         <div class="buy horizontal space-box-content margin-auto-left-right">
                             <div class="price horizontal">
                                 <p>$59.0</p>
-                                <p
-                                    style="
-                                        color: #f51a1a;
-                                        font-weight: 500;
-                                    "
-                                >
-                                    $49.0
-                                </p>
+                                <p>Free</p>
                             </div>
                             <button>Start Now</button>
                         </div>
@@ -361,6 +354,31 @@
                         </div>
                     </div>
                 </div>
+                <!-- Modal register course -->
+                <div id="registrationModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h3>Register for the Course</h3>
+                        <form id="registrationForm">
+                            <input type="text" id="student-name" placeholder="Full Name" required>
+                            <input type="date" id="student-dob" placeholder="Date of Birth" required>
+                            <input type="email" id="student-email" placeholder="Email" required>
+                            <input type="tel" id="student-phone" placeholder="Phone Number" required>
+                            <textarea id="student-address" placeholder="Address" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <button id="viewStudentInfo" style="display: none;">View Student Info</button>
+
+                <!-- Modal Student Info -->
+                <div id="studentInfoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h3>Student Information</h3>
+                        <div id="studentInfoContent"></div>
+                    </div>
+                </div>
             </div>
 
                 
@@ -416,8 +434,7 @@
                 </div>
             </footer>
         </main>
-
-        <script src="./app.js"></script>
+        <script src="./effect.js"></script>
     </body>
 </html>
 
