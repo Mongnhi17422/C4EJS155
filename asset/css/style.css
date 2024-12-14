@@ -256,6 +256,7 @@ body {
     border-radius: 20px;
     text-align: center;
     line-height: 2.4rem;
+    transition: transform 0.3s ease-in-out;
 }
 
 .box-categories img {
@@ -276,6 +277,7 @@ body {
 
 .box-categories:hover {
     cursor: pointer;
+    transform: scale(1.05);
     box-shadow: 0px 10px 20px 4px #e1e0e0;
 }
 
@@ -301,9 +303,11 @@ body {
     height: 474px;
     border: 1px solid #eaeaea;
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .the-courses:hover {
+    transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0px 10px 30px 5px #e1e0e0;
 }
@@ -672,9 +676,11 @@ button.btn-instructor {
     width: 410px;
     border: 1px solid #eaeaea;
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .a-article:hover {
+    transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0px 10px 30px 5px #e1e0e0;
 }  
