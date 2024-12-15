@@ -86,7 +86,7 @@
                             <h2>All Course</h2>
                             <div class="heading-right horizontal space-box-content">
                                 <div class="search">
-                                    <input type="text" placeholder="Search">
+                                    <input type="text" id="searchInput" placeholder="Search" oninput="searchFunction()">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
                                 <i class="fa-brands fa-microsoft"></i>
@@ -95,6 +95,7 @@
                         </div>
                         <div
                     class="featured-courses"
+                    id="courseList"
                 >
                     <div
                         class="main-featured-courses horizontal space-box-content"
@@ -636,6 +637,7 @@
         </main>
 
         <script src="./effect.js"></script>
+       
     </body>
 </html>
 

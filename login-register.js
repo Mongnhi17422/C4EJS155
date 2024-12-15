@@ -139,7 +139,6 @@ function handleLogin() {
         );
 
         if (user) { 
-            localStorage.setItem("isLoggedIn", "true");
             localStorage.setItem("loggedInUser", JSON.stringify(user));
             alert(`Login successful! Welcome, ${user.username}`);
             window.location.href = "index.html";

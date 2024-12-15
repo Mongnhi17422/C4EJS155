@@ -1,3 +1,6 @@
+
+// Show/Hidden lesson list
+
 document.addEventListener("DOMContentLoaded", function () {
     const lessonTitles = document.querySelectorAll(".title-lesson");
 
@@ -20,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// Css star rate
 document.addEventListener("DOMContentLoaded", function () {
     const listItems = document.querySelectorAll("#rate-star > li");
     listItems.forEach((item, index) => {
@@ -38,3 +41,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+// Find course
+  function searchFunction() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let courses = document.getElementsByClassName("the-courses");
+
+    for (let i = 0; i < courses.length; i++) {
+        let course = courses[i];
+        let courseName = course.querySelector("h4").innerText.toLowerCase();  // Lấy tên khóa học
+        
+        if (courseName.indexOf(input) > -1) {
+            course.style.display = "";  
+        } else {
+            course.style.display = "none";  
+        }
+    }
+}
